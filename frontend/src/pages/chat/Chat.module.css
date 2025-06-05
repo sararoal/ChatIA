@@ -1,0 +1,7 @@
+.contentWrapper{
+  display: flex;
+  width: 100%;
+  background-color: var(--color-ghost-100);
+  border-radius: var(--radius-main);
+  overflow: hidden;
+}

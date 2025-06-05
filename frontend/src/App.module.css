@@ -1,0 +1,7 @@
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: var(--color-charcoal-800);
+  color: var(--color-charcoal-800);
+  padding: 1rem 1rem 1rem 0;
+}

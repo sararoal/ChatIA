@@ -1,0 +1,49 @@
+.mainPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* p-8 */
+}
+
+.heading {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600;     /* font-semibold */
+  margin-bottom: 2rem;  /* mb-8 */
+}
+
+.inputContainer {
+  width: 100%;
+  max-width: 36rem; /* max-w-xl */
+}
+
+.inputBox {
+  background-color: var(--color-chatia-100);
+  border-radius: 0.75rem; /* rounded-xl */
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem; /* py-3 px-4 */
+}
+
+.input {
+  flex: 1;
+  background-color: transparent;
+  outline: none;
+  color: var(--color-charcoal-800);
+}
+
+.input::placeholder {
+  color: var(--color-charcoal-600); /* placeholder:text-[#212529]/70 */
+}
+
+.sendButton {
+  margin-left: 1rem; /* ml-4 */
+  color: var(--color-charcoal-800);
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  color: var(--color-chatia-200);
+}

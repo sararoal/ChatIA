@@ -1,0 +1,36 @@
+.message {
+    padding: 10px 20px;
+    margin: 6px 10px;
+    border-radius: var(--radius-main);
+    min-width: 60px;
+    max-width: 700px;         
+    width: fit-content;       
+    word-wrap: break-word;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+    text-align: left;
+    display: inline-block; 
+}
+
+.own {
+    background-color: var(--color-chatia-100);
+    margin-left: auto;
+    margin-right: 0;
+    border-bottom-left-radius: var(--radius-main);
+    border-bottom-right-radius: 0;
+    border-top-left-radius: var(--radius-main);
+    border-top-right-radius: var(--radius-main);
+}
+
+.other {
+    background-color: var(--color-chatia-200);
+    color: var(--color-charcoal-100);
+    margin-left: 0;
+    margin-right: auto;
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: var(--radius-main);
+    border-top-left-radius: var(--radius-main);
+    border-top-right-radius: var(--radius-main);
+}

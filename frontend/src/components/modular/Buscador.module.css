@@ -1,0 +1,73 @@
+
+
+/* Contenedor relativo para botón o input (máximo tamaño) */
+.searchWrapper {
+  position: relative;
+  height: 2.5rem; /* igual que el botón */
+  width: 2.5rem; /* tamaño inicial del contenedor (igual que el botón) */
+  transition: width 0.3s ease-out; /* animación para el cambio de tamaño */
+  /* Eliminamos overflow: hidden para permitir que el contenedor crezca */
+  overflow: visible; 
+}
+
+/* Botón de lupa (tamaño fijo, centrado) */
+.iconButton {
+  padding: 0.5rem; /* p-2 */
+  border-radius: 0.75rem; /* rounded-xl */
+  background-color: var(--color-chatia-100);
+  color: var(--color-charcoal-800);
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el icono dentro del botón */
+  width: 2.5rem; /* Se ajusta al 100% del contenedor */
+  height: 100%; /* Se ajusta al 100% del contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* por encima del input */
+}
+
+/* El hover sigue funcionando */
+.iconButton:hover {
+  background-color: var(--color-chatia-200);
+}
+
+/* Icono SVG */
+.icon {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+}
+
+/* Contenedor que envuelve el input y la lupa */
+.inputWrapper {
+  position: relative;
+  width: 100%; /* El contenedor debe ocupar el 100% del ancho disponible */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 2.5rem; /* Inicia pequeño */
+  background-color: var(--color-chatia-100);
+  border-radius: 0.75rem;
+}
+
+/* Campo de input animado */
+.searchInput {
+  position: absolute;
+  top: 0;
+  left: 2rem; /* Espaciado para hacer espacio para el icono */
+  height: 100%;
+  padding: 0 0.75rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 0.875rem;
+  width: 100%; /* El input ocupará todo el contenedor cuando se expanda */
+  transition: opacity 0.3s ease-out; /* Transición suave */
+}
+
+/* Estilo del placeholder */
+.searchInput::placeholder {
+  color: var(--color-charcoal-600);
+}

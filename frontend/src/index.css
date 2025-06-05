@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    font-family: Arial, sans-serif;
+  }
+}
+
+@theme {
+  --radius-main: 10px;
+
+  --color-chatia-100: #7dc1c2;
+  --color-chatia-200: #599d9e;
+
+  --color-charcoal-100: #f7f9fb;
+  --color-charcoal-200: #e0e2e5;
+  --color-charcoal-300: #c3c5c8;
+  --color-charcoal-400: #a6a9ac;
+  --color-precognis-500: #3f4245;
+  --color-charcoal-600: #5a5e61;
+  --color-charcoal-700: #373b3d;
+  --color-charcoal-800: #212529;
+  --color-charcoal-900: #1b1f21;
+  
+
+  --color-ghost-100: #f8f8ff; 
+  --color-ghost-200: #ececfa;
+  --color-ghost-300: #dcdcf4;
+  --color-ghost-400: #c8c8e9;
+  --color-ghost-500: #afafd9;
+  --color-ghost-600: #8c8cc0;
+  --color-ghost-700: #6a6aa7;
+  --color-ghost-800: #4a4a8d;
+  --color-ghost-900: #2e2e73;
+}
