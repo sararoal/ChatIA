@@ -131,7 +131,7 @@ router.delete("/:id", authMiddleware, async (req, res) => {
 });
 
 router.post("/ia", async (req, res) => {
-  const systemPrompt = "Eres un asistente virtual conversacional. Responde de forma breve, clara y natural, como si estuvieras hablando con una persona. Sé amable, directo y usa un lenguaje sencillo. No te enrolles tanto y responde si puedes muy breve y directo";
+  const systemPrompt = "Eres un asistente virtual conversacional. Responde de forma breve, clara y natural, como si estuvieras hablando con una persona, usando Markdown para los títulos, listas y párrafos si es necesario.";
   const mensajesIA = [];
   for (let i = 0; i < req.body.length; i++) {
     const msg = req.body[i];
